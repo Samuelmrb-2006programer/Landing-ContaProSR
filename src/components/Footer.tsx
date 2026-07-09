@@ -8,9 +8,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
           <div className="lg:col-span-2">
             <a href="#hero" className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-primary-300 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">C</span>
-              </div>
+              <img src="/contaprosr-logo1.ico" alt="ContaPro SR" className="w-8 h-8 rounded-lg" />
               <span className="text-lg font-bold text-white font-heading tracking-tight">
                 ContaPro <span className="text-primary-400">SR</span>
               </span>

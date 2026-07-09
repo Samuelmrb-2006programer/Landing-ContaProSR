@@ -33,9 +33,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a href="#hero" className="flex items-center gap-2.5" onClick={(e) => { e.preventDefault(); scrollTo('#hero') }}>
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-600 to-primary-400 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">C</span>
-            </div>
+            <img src="/contaprosr-logo1.ico" alt="ContaPro SR" className="w-8 h-8 rounded-lg" />
             <span className="text-lg font-bold text-primary-900 font-heading tracking-tight">
               ContaPro <span className="text-primary-500">SR</span>
             </span>
