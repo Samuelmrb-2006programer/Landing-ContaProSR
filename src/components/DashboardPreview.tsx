@@ -36,15 +36,13 @@ export default function DashboardPreview() {
               onClick={() => setSelected(i)}
               className="group relative overflow-hidden rounded-2xl border border-primary-100/80 shadow-sm card-hover text-left bg-white"
             >
-              <div className={`h-48 bg-gradient-to-br ${screen.color} flex items-center justify-center relative`}>
-                <div className="absolute inset-0 bg-white/10" />
-                <div className="relative flex flex-col items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                    <Maximize2 size={20} className="text-white" />
-                  </div>
-                  <span className="text-sm font-medium text-white/90">Click para ampliar</span>
-                </div>
-                <div className="absolute top-3 right-3 w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="h-48 bg-primary-50 flex items-center justify-center relative overflow-hidden">
+                <img
+                  src={screen.img}
+                  alt={screen.label}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-3 right-3 w-8 h-8 rounded-lg bg-black/30 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <Maximize2 size={14} className="text-white" />
                 </div>
               </div>
@@ -85,16 +83,12 @@ export default function DashboardPreview() {
                   <X size={20} />
                 </button>
               </div>
-              <div className={`h-80 sm:h-96 bg-gradient-to-br ${dashboardScreenshots[selected].color} flex items-center justify-center`}>
-                <div className="text-center">
-                  <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mx-auto mb-3">
-                    <Maximize2 size={28} className="text-white" />
-                  </div>
-                  <p className="text-white/80 text-lg font-medium">
-                    {dashboardScreenshots[selected].label}
-                  </p>
-                  <p className="text-white/50 text-sm mt-1">Vista previa del sistema</p>
-                </div>
+              <div className="h-80 sm:h-96 bg-primary-50 flex items-center justify-center overflow-hidden">
+                <img
+                  src={dashboardScreenshots[selected].img}
+                  alt={dashboardScreenshots[selected].label}
+                  className="w-full h-full object-contain"
+                />
               </div>
             </motion.div>
           </motion.div>

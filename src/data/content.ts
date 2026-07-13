@@ -139,12 +139,24 @@ export const steps = [
 ]
 
 export const dashboardScreenshots = [
-  { label: 'Login', color: 'from-primary-800 to-primary-600' },
-  { label: 'Dashboard', color: 'from-primary-700 to-primary-500' },
-  { label: 'Lista de tareas', color: 'from-primary-600 to-primary-400' },
-  { label: 'Historial', color: 'from-primary-700 to-primary-500' },
-  { label: 'Auditor IA', color: 'from-primary-600 to-primary-400' },
-  { label: 'Gestión de documentos', color: 'from-primary-800 to-primary-600' },
+  { label: 'Login', 
+    img: '/login.png', 
+    },
+  
+  { label: 'Dashboard', 
+    img: '/dashboard.png' },
+
+  { label: 'Lista de tareas', 
+    img: '/gestor_tareas.png' },
+
+  { label: 'Historial', 
+    img: '/hist_tareas.png' },
+
+  { label: 'Auditor IA', 
+    img: '/auditor_ia.png' },
+
+  { label: 'Gestión de documentos', 
+    img: '/archivos_doc.png' },
 ]
 
 export const benefits = [
